@@ -1,0 +1,24 @@
+git checkout -b branch1
+git checkout -b branch2
+git checkout branch1
+
+# 提交 1
+echo "Content for feature A" > featureA.txt
+git add featureA.txt
+git commit -m "Add feature A"
+
+# 提交 2
+echo "Updated content for feature A" >> featureA.txt
+git add featureA.txt
+git commit -m "Update feature A"
+git checkout branch2
+
+# 提交 3
+echo "Content for feature A" > featureA.txt
+git add featureA.txt
+git commit -m "Add feature A"
+
+# 提交 4
+echo "Updated content for feature A" >> featureA.txt
+git add featureA.txt
+git commit -m "Update feature A"
